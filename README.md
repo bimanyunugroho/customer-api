@@ -111,6 +111,54 @@ json
 }
 ```
 
+### Mengubah Data Baru
+
+Mengubah data baru ke server.
+
+- **URL:** `/api/v1/customers/{id}`
+- **Metode:** PUT
+- **Body:**
+```
+json
+{
+    "name": "Crona-Roberts update",
+    "type": "B",
+    "email": "pmurazik@gmail.com",
+    etc...
+}
+```
+
+#### Contoh Permintaan
+
+```
+http
+POST /api/v1/customers/{id}
+Content-Type: application/json
+Accept: application/json
+
+json
+{
+    "name": "Crona-Roberts update",
+    "type": "B",
+    etc...
+}
+```
+
+#### Contoh Respons
+
+```
+json
+{
+    "data": {
+        "id": 1,
+        "name": "Crona-Roberts update",
+        "type": "B",
+        "email": "pmurazik@gmail.com",
+        etc...
+    }
+}
+```
+
 ## Kontribusi
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://id.linkedin.com/in/bimanyu-nugroho-firmansyah) 
