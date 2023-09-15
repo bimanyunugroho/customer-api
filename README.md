@@ -159,6 +159,46 @@ json
 }
 ```
 
+### Bulk Insert Data Invoive by CustomerID
+
+#### Contoh Permintaan
+- **URL:** `api/v1/invoices/bulk`
+- **Metode:** POST
+- **Body:**
+```
+json
+{
+    "name": "Crona-Roberts update",
+    "type": "B",
+    "email": "pmurazik@gmail.com",
+    etc...
+}
+```
+
+#### Contoh Response
+```
+json 
+[
+    {
+    "customerId": 1,
+    "amount": 90000,
+    "status": "P",
+    "billedDate": "2022-01-12 06:51:16",
+    "paidDate": "2022-01-14 06:51:16"
+    },
+    {
+    "customerId": 1,
+    "amount": 100000,
+    "status": "B",
+    "billedDate": "2019-07-24 07:53:25",
+    "paidDate": null
+    }
+]
+```
+
+
+
+
 ## Kontribusi
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://id.linkedin.com/in/bimanyu-nugroho-firmansyah) 
